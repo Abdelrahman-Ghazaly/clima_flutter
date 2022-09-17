@@ -32,7 +32,6 @@ class LoadingScreenState extends State<LoadingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    print('build');
     return const Scaffold(
       body: Center(
         child: SpinKitPouringHourGlass(

@@ -8,12 +8,10 @@ class Location {
 
   Future<void> getCurrentLocation() async {
     try {
-      print('getting Location');
       Position position = await Geolocator.getCurrentPosition(
         desiredAccuracy: LocationAccuracy.low,
         forceAndroidLocationManager: true,
       );
-      print('got Location');
 
       latitude = position.latitude;
       longitude = position.longitude;
